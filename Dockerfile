@@ -9,3 +9,4 @@ RUN cd /usr/lib/adscoop/ && unzip dashboard-service.zip
 RUN rm /usr/lib/adscoop/dashboard-service.zip
 
 EXPOSE 8185
+
