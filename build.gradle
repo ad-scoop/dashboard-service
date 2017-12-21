@@ -62,4 +62,4 @@ distZip {
     archiveName = baseName + ".zip"
 }
 
-mainClassName = 'com.adscoop.StartDashBoard'
+mainClassName = "StartDashBoard"
