@@ -70,4 +70,7 @@ distZip {
     archiveName = baseName + ".zip"
 }
 
+
 mainClassName = "StartDashBoard"
+
+
