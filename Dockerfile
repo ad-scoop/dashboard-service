@@ -1,6 +1,6 @@
 FROM java:8-jdk-alpine
 
-COPY build/distributions/dashboard-service.zip /usr/lib/adscoop/dashboard-service.zip
+COPY build/distributions/dashboard-service.zip  /usr/lib/adscoop/dashboard-service.zip
 
 RUN apk update && apk upgrade
 RUN apk add bash

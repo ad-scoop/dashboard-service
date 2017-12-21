@@ -6,7 +6,7 @@ apply plugin: "io.ratpack.ratpack-java"
 apply plugin: "idea"
 apply plugin: 'java'
 apply plugin: 'maven'
-
+apply plugin: 'com.bmuschko.docker-remote-api'
 apply plugin: 'com.bmuschko.docker-java-application'
 
 
@@ -26,6 +26,14 @@ buildscript {
     }
 
 
+}
+
+
+docker {
+    javaApplication {
+        maintainer = 'Thomas Kleist "thomas@kleist-it.com"'
+        port = 8185
+    }
 }
 repositories {
     jcenter()
@@ -62,4 +70,4 @@ distZip {
     archiveName = baseName + ".zip"
 }
 
-mainClassName = 'com.adscoop.StartDashBoard'
+mainClassName = "StartDashBoard"
