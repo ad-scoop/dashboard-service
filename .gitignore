@@ -53,3 +53,5 @@ fabric.properties
 /build/
 /.gradle/
 /out/
+/.idea/
+/dashboard-service.tar
