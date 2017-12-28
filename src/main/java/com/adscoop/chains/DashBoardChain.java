@@ -14,6 +14,6 @@ public class DashBoardChain implements Action<Chain> {
 
     @Override
     public void execute(Chain chain) throws Exception {
-        chain.all(CorsHandler.class).post("campagin/:name/:id", AddBannerInfoHandler.class).get("bannerinfo/:name", DashBoardHandler.class);
+        chain.all(CorsHandler.class).get("test", ctx -> ctx.render("dash cash")).post("campagin/:name/:id", AddBannerInfoHandler.class).get("bannerinfo/:name", DashBoardHandler.class);
     }
 }
